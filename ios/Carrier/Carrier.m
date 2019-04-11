@@ -98,8 +98,8 @@ NSString * const NSCustomErrorDomain = @"PLUGIN-ERROR";
       options.udpEnabled = [config[@"udp_enabled"] boolValue];
       options.bootstrapNodes = bootstrapNodes;
       
-      [ELACarrier initializeInstanceWithOptions:options delegate:self error:&error];
-      elaCarrier = [ELACarrier getInstance];
+      [ELACarrier initializeSharedInstance:options delegate:self error:&error];
+      elaCarrier = [ELACarrier sharedInstance];
       
       
       
@@ -114,7 +114,7 @@ NSString * const NSCustomErrorDomain = @"PLUGIN-ERROR";
       }
     }
     
-    _init = [elaCarrier startWithIterateInterval:1000 error:&error];
+    _init = [elaCarrier start:1000 error:&error];
     if (_init) {
       [self setCallback:sendEvent];
       _callback = sendEvent;

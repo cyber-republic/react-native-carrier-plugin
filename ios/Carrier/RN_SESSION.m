@@ -29,7 +29,7 @@
     [self setElaCarrier: [carrier getIntance]];
     
     NSError *error = nil;
-    ELACarrierSessionManager *m = [ELACarrierSessionManager getInstance:self.elaCarrier usingHandler:
+    [ELACarrierSessionManager initializeSharedInstance:self.elaCarrier sessionRequestHandler:
       ^(ELACarrier *_carrier, NSString *friendId, NSString *sdp){
         RCTLog(@"[ onSessionRequest ] => %@, %@", friendId, sdp);
         
@@ -47,6 +47,7 @@
       
     } error: &error];
     
+    ELACarrierSessionManager *m = [ELACarrierSessionManager sharedInstance];
     [self setElaSessionManager:m];
   }
   return self;
@@ -85,7 +86,7 @@
   if(!fss){
     fss = [[FriendSessionStream alloc] initWithFriendId:friendId];
     NSError *error = nil;
-    ELACarrierSession *session = [self.elaSessionManager newSessionTo:friendId error:&error];
+    ELACarrierSession *session = [self.elaSessionManager createSession:friendId error:&error];
     [fss setSession:session];
     
     [FriendSessionStream putByFriendId:friendId data:fss];
@@ -105,7 +106,7 @@
      
      if(status == 0){
        NSError *error = nil;
-       if(![session startWithRemoteSdp:sdp error:&error]){
+       if(![session startremoteSdp:sdp error:&error]){
          RCTLog(@"Start session error: %@", error);
        }
      }
@@ -124,7 +125,7 @@
   BOOL flag = [fss.session replyInviteRequestWithStatus:(NSInteger)status reason:reason error:error];
   
     if(flag){
-        [fss.session startWithRemoteSdp:fss.sdp error:error];
+        [fss.session startremoteSdp:fss.sdp error:error];
     }
 }
 
