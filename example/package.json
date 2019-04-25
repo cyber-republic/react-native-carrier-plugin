@@ -13,7 +13,7 @@
     "native-base": "2.7.0",
     "react": "16.4.1",
     "react-native": "0.56.0",
-    "react-native-elastos-carrier": "file:../"
+    "react-native-elastos-carrier": "file:../plugin"
   },
   "devDependencies": {
     "@wdio/cli": "^5.7.15",
