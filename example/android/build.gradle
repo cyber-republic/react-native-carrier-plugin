@@ -30,7 +30,7 @@ allprojects {
             url "$rootDir/../node_modules/react-native/android"
         }
         flatDir{
-            dirs "$rootDir/../node_modules/react-native-elastos-carrier/android/libs"
+            dirs "$rootDir/../node_modules/elastos-unity-carrier/android/libs"
         }
     }
 }

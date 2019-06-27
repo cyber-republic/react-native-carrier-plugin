@@ -1,4 +1,4 @@
-jest.mock('react-native-elastos-carrier', ()=>{
+jest.mock('elastos-unity-carrier', ()=>{
 
   const _ = require('lodash');
 

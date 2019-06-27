@@ -2,7 +2,7 @@ import 'react-native';
 
 
 
-import {Carrier} from 'react-native-elastos-carrier';
+import {Carrier} from 'elastos-unity-carrier';
 
 describe('carrier -> static', ()=>{
   test('isValidAddress', ()=>{

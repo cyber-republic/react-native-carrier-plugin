@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import {AppRegistry, StyleSheet, View, Image, ActionSheetIOS, NativeModules, AlertIOS, Platform} from 'react-native';
 import {Root, Toast, Container, Header, Content, Footer, FooterTab, Button, Text, Row, Col } from 'native-base';
 
-import {Carrier} from 'react-native-elastos-carrier';
+import {Carrier} from 'elastos-unity-carrier';
 
 
 let targetAddress = '';

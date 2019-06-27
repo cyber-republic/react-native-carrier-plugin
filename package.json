@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cyber-republic/react-native-elastos-carrier.git"
+    "url": "git+https://github.com/cyber-republic/elastos-unity-carrier.git"
   },
   "keywords": [
     "android",
@@ -26,9 +26,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cyber-republic/react-native-elastos-carrier/issues"
+    "url": "https://github.com/cyber-republic/elastos-unity-carrier/issues"
   },
-  "homepage": "https://github.com/cyber-republic/react-native-elastos-carrier#readme",
+  "homepage": "https://github.com/cyber-republic/elastos-unity-carrier#readme",
   "scripts": {
     "test": "cd example && npm test && cd ..",
     "lint": "eslint ./src"

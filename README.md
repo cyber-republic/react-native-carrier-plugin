@@ -17,7 +17,7 @@ react-native link elastos-unity-carrier
 ## Next step
 ### iOS
 * open xcode
-* add ElastosCarrier.framework to **Linked Frameworks and Libraries** from **/node_modules/react-native-elastos-carrier/ios/Carrier** folder
+* add ElastosCarrier.framework to **Linked Frameworks and Libraries** from **/node_modules/elastos-unity-carrier/ios/Carrier** folder
 * run project
 
 
@@ -25,7 +25,7 @@ react-native link elastos-unity-carrier
 add following lines to project build.gradle 
 ```
 flatDir{
-    dirs "$rootDir/../node_modules/react-native-elastos-carrier/android/libs"
+    dirs "$rootDir/../node_modules/elastos-unity-carrier/android/libs"
 }
 ```
 under allprojects repositories block.

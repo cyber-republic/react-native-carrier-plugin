@@ -1,9 +1,11 @@
 rootProject.name = 'example'
-include ':react-native-elastos-carrier'
-project(':react-native-elastos-carrier').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-elastos-carrier/android')
-include ':react-native-elastos-carrier'
-project(':react-native-elastos-carrier').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-elastos-carrier/android')
-include ':react-native-elastos-carrier'
-project(':react-native-elastos-carrier').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-elastos-carrier/android')
+include ':elastos-unity-carrier'
+project(':elastos-unity-carrier').projectDir = new File(rootProject.projectDir, '../node_modules/elastos-unity-carrier/android')
+include ':elastos-unity-carrier'
+project(':elastos-unity-carrier').projectDir = new File(rootProject.projectDir, '../node_modules/elastos-unity-carrier/android')
+include ':elastos-unity-carrier'
+project(':elastos-unity-carrier').projectDir = new File(rootProject.projectDir, '../node_modules/elastos-unity-carrier/android')
+include ':elastos-unity-carrier'
+project(':elastos-unity-carrier').projectDir = new File(rootProject.projectDir, '../node_modules/elastos-unity-carrier/android')
 
 include ':app'
